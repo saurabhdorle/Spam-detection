@@ -24,9 +24,10 @@ e.g.: - 'John' 'NN' (NN = Noun i.e. tag)
 **5) word embedding using TFIDF:** Textual data transformed into numeric format using TFIDF(Term Frequency - Inverse Document frequency)
 
 **6) Word Embedding using word2vec:** 
-Word2vec is word embedding model developed by google. It is shallow neural network base on skip gram model. Here, Word2vec model is trained using 'spam' dataset for representing every word with 200 dimensional vector. 
+Word2vec is word embedding model developed by google. It is shallow neural network based on skip-gram model. 
+Here, Word2vec model is trained using 'spam' dataset for representing every word with 200 dimensional vector. 
 e.g.:- to represent the sentence of size 6 words, total 1200 dimension vector is required, which is pretty huge.
-To reduce the vector size as well as maintain the context between words, weighted average vector of word2vec and TFIDF matrix is calculated. 
+To reduce the vector size as well as to maintain the context between the words, weighted average vector of word2vec and TFIDF matrix is calculated. 
 Now every sentence is represented using 200 dimentional vector only.
 
 ## Classification Models:
