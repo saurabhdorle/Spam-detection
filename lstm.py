@@ -80,3 +80,37 @@ accr = model.evaluate(test_sequences_matrix, y_test)
 
 
 print('Test set\n  Loss: {:0.3f}\n  Accuracy: {:0.3f}'.format(accr[0],accr[1]))
+
+# =============================================================================
+#  Performance Measures
+# =============================================================================
+
+y_pred = model.predict(test_sequences_matrix)
+y_pred = (y_pred > 0.5) 
+
+# Making the Confusion Matrix
+from sklearn.metrics import confusion_matrix
+cm = confusion_matrix(y_test, y_pred)
+
+
+accuracy = (cm[0,0] + cm[1,1]) / 1115
+print("Accuracy = ",accuracy)
+
+Misclassification_Rate = (cm[0,1] + cm[1,0]) / 1115
+print("Misclassification Rate = ",Misclassification_Rate)
+
+recall = cm[1,1]/(cm[1,0] + cm [1,1]) #recall or TP rate or sensitivity
+print("Recall = ",recall)
+
+FP_rate = cm[0,1]/(cm[0,0] + cm[0,1])
+print("False Positive Rate = ", FP_rate)
+
+specificity = cm[0,0] / (cm[0,0] + cm[0,1])
+print("Specificity = ", specificity)
+
+precision = cm[1,1] / (cm[0,1] + cm[1,1])
+print("Precision = ", precision)
+
+F_measure = (2 * precision * recall) / (precision + recall)
+print("F-measure = ", F_measure)
+
