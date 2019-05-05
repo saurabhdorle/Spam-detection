@@ -3,7 +3,7 @@
 SMS Spam detection using dataset of 5.5k messages in English language.
 
 ## Dataset:
-Data consists of toatl 5.5k messages in textual format, labels as ham(not-spam) and spam(as spam).
+Data consists of total 5.5k messages in textual format, labels as ham(not-spam) and spam(as spam).
 First column has labels, second column has text data, where remaining 3 columns does'nt contain any data.
 
 ## Prerpocessing:
