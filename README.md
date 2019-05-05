@@ -18,7 +18,7 @@ So these words are removed using NLTK.
 **3) Lemmetization:** Every single words is replaced by its root word.
 e.g.:- 'tasted', 'tasting' replace by 'taste' only.
 
-**4) Part-of-Speech(POS) tagging:** Tags are assigned to every word, whether that word is noun, pronoun, verb etc. So that it will help in identifying the maeanig behind while sentence.
+**4) Part-of-Speech(POS) tagging:** Tags are assigned to every word, whether that word is noun, pronoun, verb etc. So that it will help in identifying the meaning behind the sentence.
 e.g.: - 'John' 'NN' (NN = Noun i.e. tag)
 
 **5) word embedding using TFIDF:** Textual data transformed into numeric format using TFIDF(Term Frequency - Inverse Document frequency)
