@@ -66,7 +66,6 @@ from sklearn.model_selection import train_test_split
 vectorizer = TfidfVectorizer('english')
 text_vector = vectorizer.fit_transform(text_feature2)
 
-
 X = text_vector
 y = dataset['label']
 # Train Test split of dataset
@@ -96,3 +95,7 @@ mnb = MultinomialNB(alpha=0.2)
 mnb.fit(X_train, y_train)
 prediction = mnb.predict(X_test)
 accuracy_score(y_test,prediction)
+
+
+
+
